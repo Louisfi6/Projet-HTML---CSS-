@@ -1,0 +1,728 @@
+
+
+/*---------Scrollbar -----------*/
+
+::-webkit-scrollbar, html::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #4D4D4D;
+}
+::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background-color: rgb(121 153 151 / 80%);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track, html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+  background-color: #4d4d4d;
+}
+
+
+body {
+  background: #25222a; 
+  height: 100vh;
+  margin: 0;
+  max-width: 100% ;
+  overflow-x: hidden ;
+}
+#accueil {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  background: url(/img/ganyu2.webp);
+  background-size: cover;
+  background-position: 0 15%;
+  padding: 85px;
+  border-bottom: 3px solid #343232;
+}
+
+
+header h1 {
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  margin-left: -25px;
+}
+header h2{
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+}
+.menu .logo img {
+  display: flex;
+  position: relative;
+  max-height: 30px;
+  width: 83.47px;
+  height: 30px;
+  top: 10px;
+  left: 90px;
+  margin-bottom: -30px;
+}
+  
+.logo {
+  height: 50px;
+}
+
+.button {
+  display: inline-block;
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+nav{
+  border-bottom: 3px solid #343232;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+  top: 0;
+  text-align: right;
+  position: fixed;
+  z-index: 4;
+  
+}
+nav li{
+  list-style-type: none;
+  float: left;
+}
+nav a{
+  margin-right: 30px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 25px;
+  color: whitesmoke;
+  font-size: 17px;
+  font-family: 'Signika', cursive;  
+}
+nav ul{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.table{
+  display: table;
+  margin: 0 auto;
+}
+.accueil:hover{
+  background-color: rgba(176,176,176,0.11);
+  border-top: 4px solid rgba(195,186,255,0.73);
+}
+
+.items:hover{
+  background-color: rgba(176,176,176,0.11);
+  border-top: 4px solid rgba(195,186,255,0.73);
+}
+.genshin:hover{
+  background-color: rgba(176,176,176,0.11);
+  border-top: 4px solid rgba(195,186,255,0.73);
+}
+
+.contact:hover{
+  background-color: rgba(176,176,176,0.11);
+  border-top: 4px solid rgba(195,186,255,0.73);
+}
+.li:hover a{
+  padding: 15px 30px 20px 30px;
+}
+
+
+
+
+
+
+/**--------------Section 1 video-----------**/
+.sect1 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sect1 .container {
+  display: flex;
+  align-items: center;
+  width: 1530px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url("img/texturec1.webp");
+  background-size: 1500px;
+  border-radius: 60px;
+  border-top: 25px solid #25222A;
+  border: 0px solid  rgb(3, 3, 3,0.37);
+  box-shadow: 0 6px 19px #121212;
+  margin-top: 70px;
+  
+ 
+  
+  
+}
+.sect1 .container .left{
+  margin-left: 100px;
+}
+.sect1 .container .center {
+  position: relative;
+  left: 300px;
+  bottom: 100px;  
+  
+}
+
+.sect1 .container .center iframe{
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 20px  #1e0b01;
+  position: relative;
+  right: 930px;
+  bottom:-10px;
+  width:420px ;
+  height: 240px;
+}
+.sect1 .container .border img {
+  display: flex;
+  position: relative;
+  bottom: 95px;
+  height: 440px;
+  width: 650px;
+  right: 99px;
+}
+
+
+
+
+.sect1 .container .left h2{
+  font-size: 8em;
+  color: #fff;
+  text-shadow: 0 0 6px;
+  text-align: center;
+  margin-top: -50px;
+  margin-left: -65px;
+}
+
+
+.sect1 .container .left h3{
+  font-size: 8em;
+  color: #fff;
+  text-shadow: 0 0 6px;
+  text-align: center;
+  margin-top: -130px;
+  margin-left: -15px;
+}
+
+.sect1 .container .left p {
+  color: #949494;
+  max-width: 600px;
+  font-family: Fira Sans;
+  font-weight: bold;
+  margin: 30px 0;
+  margin-top: -100px;
+
+}
+.sect1 .container .left button {
+  position: relative;
+  bottom: 50px;
+  max-height: 100px;
+  max-width: 100%;
+  min-width: 140px;
+  text-decoration: none;
+  align-items: center;
+  background-image: linear-gradient(144deg,#212121, #bdbdbd 50%,#212121);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(4, 146, 186, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: Fira Sans;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  padding: 19px 24px;
+  touch-action: manipulation;
+  cursor: pointer;
+  margin-left: 90px;
+  transition: 0.4s;
+}
+
+.sect1 .container .left button:hover {
+  -webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.sect1 .right img {
+  height: 490px;
+  width: 381.11px;
+  margin-left: 10px;
+  margin-bottom: 10%;
+  margin-top: 80px;
+  animation: floating 6s ease-in-out 0s infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  0% {
+    transform: translateY(0);
+  }
+}
+
+
+/** ----------Section 2 Qu'est-ce que genshin------------**/
+
+.nav1 {
+  height: 100px;
+}
+.sect2 .what_genshin {
+  position: relative;
+  width: 80%;
+  height: 500px;
+  background-color: #353448;
+  margin: 0 auto;
+  border-radius: 15px;
+  display: flex;
+  margin-top: 90px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  animation: shadow 5s infinite ease-in-out ;
+}
+.sect2 img {
+  width:533.33px ;
+  height: 400px;
+  margin-right:80px ;
+}
+
+
+
+@keyframes shadow {
+  40%{
+  box-shadow: 0 0 45Px 7px rgba(145,127,114,0.64);
+}
+ 
+}
+
+
+.sect2 .what_genshin .left{
+  margin-left: 80px;
+}
+.sect2 .what_genshin .left img{
+  max-height: 400px;
+  position: relative;
+  top: -10px;
+}
+.sect2 .what_genshin .right {
+ max-width: 500px;
+ border-left: 1px solid #6b6666;
+ 
+}
+
+
+.sect2 .what_genshin h4 {
+  color: #d1b3ff;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  font-size: 2em;
+  font-family: Fira Sans;
+
+}
+.sect2 .what_genshin h5 {
+  color: #ffffff;
+  font-size: 5em;
+  margin-top: -40px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  font-family: Fira Sans;
+  
+}
+.sect2 .what_genshin p{
+  color: #afabe7;
+  line-break: anywhere; /*line-break: normal;*/
+  margin-left: 30px;
+  font-family: Fira Sans ;
+  
+}
+.bar {
+  border-bottom: 1px solid white;
+  height: 190px;
+  margin-right: 120px;
+  margin-left: 120px;
+  justify-content: center;
+  width: 1700px;
+}
+/** ----------Section 3 card -----------**/
+.nav2 {
+  height: 70px;
+}
+
+.sect3 .center2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  
+}
+.sect3 .title h3 {
+ 
+color:#ffbb00;
+  font-size: 2.5em ;
+  font-family: Fira Sans;
+  margin-top: 90px;
+  
+}
+.sect3 .title h4 {
+  color:white;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  font-size: 4em ;
+  font-family: Fira Sans;
+  text-align: center;
+  
+}
+
+.sect3 .container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1500px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.sect3 .card {
+  height: 550px;
+  width: 350px;
+  background-color: #353447;
+  border-radius: 15px;
+  margin: 20px;
+  overflow: hidden;  
+  box-shadow: 0 0 15px  #313030;
+  transition: 0.4s;
+  }
+
+.sect3 .card:hover {
+  -webkit-transform: scale(1.02);
+	transform: scale(1.02);
+}
+
+
+.sect3 .card .top {
+  background: linear-gradient(to top, #307d82 ,#22bf83);
+  position: relative;
+  height: 275px;
+}
+
+.sect3 .card .bottom {
+  margin: 0 20px;
+}
+
+.sect3 .card .description {
+  line-break: anywhere ;
+  text-align: center;
+  margin: auto;
+  font-family: PT Sans;
+  color: #9ccdd3;
+}
+.sect3 .card h3 {
+  color: #11a7bb;
+  font-weight: bold;
+  font-family: Fira Sans;
+  font-size: 25px;
+}
+.sect3 .card h4 {
+  position: relative;
+  color: #ffffff;
+  font-family: Fira Sans;
+  font-size: 35px;
+  top: -40px;
+}
+.sect3 .card:nth-child(1) .top {
+  transform: skew(0 , -25deg);
+  top: -100px;
+}
+.sect3 .card:nth-child(2) .top {
+  height: 75px;
+}
+.sect3 .card:nth-child(3) .top {
+  transform: skew(0 , 25deg);
+  top: -100px;
+}
+
+.sect3 .card:nth-child(1) .bottom {
+  position: relative;
+  top: -70px;
+}
+.sect3 .card:nth-child(1) img {
+  max-height: 200px;
+  position: relative;
+  transform: skew(0 , 25deg);
+  left: 5px;
+  top: 70px;
+}
+.sect3 .card:nth-child(3) img {
+  max-height: 200px;
+  position: relative;
+  transform: skew(0 , -25deg);
+  right: 5px;
+  top: 70px;
+}
+
+
+.sect3 .card:nth-child(1) h3,
+.sect3 .card:nth-child(1) h4 {
+  text-align: center;
+}
+.sect3 .top img{
+  width:200px ;
+  height:200px ;
+}
+
+
+/*--------FIN SECTION-------------*/
+
+
+
+
+/*------------------------CONTACT US--------------------------------*/
+
+
+main {
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.section-contact {
+  min-height: 108vh;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(175deg, #EEE 50%, #307d82 50%, #22bf83);
+  margin-top: -530px; 
+}
+.nahida img {
+  position: relative;
+  max-height: 500px;
+  left: 73%;
+  top: 140px;
+  margin-left: 20px;
+  animation: floating 6s ease-in-out 0s infinite;
+  height:500px ;
+  width: 338.25px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  0% {
+    transform: translateY(0);
+  }
+}
+
+
+
+.container2 {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  @media (min-width: 768px) {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  @media (min-width: 1024px) {
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+}
+
+.container2 h2 {
+  position: relative;
+  right: 487px;
+  color: #666;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+  
+}
+
+.container2 p {
+  color: #888;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+.container2 form {
+  display:  grid;
+  position: relative;
+  align-items: center;
+  border: none;
+  width: 70%;
+  grid-template-columns: fr;
+  grid-gap: 16px;
+  background-color: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px #2e2e2e;
+}
+
+@media only screen and(min-width: 768px) {
+  .container2 form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.container2 form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #525151;
+  font-size: 14px;
+}
+
+.container2 form .form-group .form-element{
+  appearance: none;
+  outline: none;
+  border: none;
+  display: block;
+  width: 90%;
+  border-radius: 5px;
+  padding: 12px 16px;
+  background-color: #e6e6e6;
+}
+
+.form-element:focus {
+  box-shadow: 0 0 6px #474747;
+  background-color: #FFF;
+  
+}
+
+.container2 form .form-group textarea {
+  min-height: 50px;
+  resize: none;
+}
+
+.submit-group {
+  grid-column: 1/-1;
+  text-align: left;
+}
+
+.submit-group input[type="submit"] {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 12px 16px;
+  background-color: #1f8e32;
+  border-radius: 8px;
+  color: black;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.submit-group input[type="submit"]:hover {
+  background-color: #3a393c;
+  color: white;
+}
+
+/*--------------FOOTER--------------*/
+
+.section-footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background: #1c1c1c;
+  height: auto;
+  width: 100vw;
+  font-family: "Fira Sans";
+  padding-top: 10px;
+  color: #FFF;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.footer-content ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin: 1rem 0 3rem 0;  
+}
+.socials li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rm 0 3rm 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.social a i {
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.social a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #0d0d0d;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
